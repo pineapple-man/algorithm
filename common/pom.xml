@@ -18,42 +18,19 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>algorithm</artifactId>
+        <groupId>com.pineapple</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
+    <description>此模块是其他模组的通用依赖模块</description>
 
-    <groupId>com.pineapple</groupId>
-    <artifactId>algorithm</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>dynamic-programing</module>
-        <module>data-structure</module>
-        <module>common</module>
-        <module>bit</module>
-        <module>graph</module>
-        <module>design</module>
-    </modules>
-    <packaging>pom</packaging>
-    <description>算法总结</description>
+    <artifactId>common</artifactId>
+
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.25</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.22</version>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.8.2</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
 
 </project>

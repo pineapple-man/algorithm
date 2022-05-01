@@ -24,11 +24,21 @@
 
 [solution-java](attempt-model/src/main/java/com/pineapple/PermutationsSolutions.java)、[solution-Golang]()、
 
+6. 给你一个栈，请你逆序这个栈。要求：不能申请额外的数据结构，只能使用递归函数。
+
+[solution-java](attempt-model/src/main/java/com/pineapple/ReverseStackSolution.java)、[solution-Golang]()、
+
+## 动态规划
+
+什么是动态规划？
+> 动态规划就是一种空间换取时间的算法模式。例如，在求解某个问题时，总是存在当前问题依赖于一些重复计算的子问题，那么继续求解当前问题时，就可以直接使用已经解决了子问题的答案，进而解决当前问题。这样一种算法模式，就可以理解为动态规划。
+
 ## 从左向右尝试模型
 
-1. 机器人走路问题
+1. 假设有排成一行的 N 个位置，记为 1～N，N 一定大于或等于2。 开始时机器人在其中的 M 位置上（M 一定是 1～N 中的一个）。如果机器人来到 1 位置，那么下一步只能往右来到 2 位置；如果机器人来到 N
+   位置，那么下一步只能往左来到 N-1 位置；如果机器人来到中间位置，那么下一步可以往左或者往右走。规定机器人必须走 K 步，最终能来到 P 位置（ P 也是 1 ～ N 中的一个）的方法有多少中？
 
-[solution-java]()、[solution-Golang]()、
+[solution-java](attempt-model/src/main/java/com/pineapple/RobotWalkSolution.java)、[solution-Golang]()、
 
 3. 背包问题
 

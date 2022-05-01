@@ -27,6 +27,18 @@ import java.util.Random;
 public class NumericalGenerator {
 	private static final Random RANDOM = new Random();
 	
+	public static int getRandomInt() {
+		return RANDOM.nextInt();
+	}
+	
+	public static double getRandomDouble(int lowerBound, int upperbound) {
+		return Math.random() * (upperbound - lowerBound) + lowerBound;
+	}
+	
+	public static int getLittleRandomPositiveInt() {
+		return getRandomPositiveInt(100);
+	}
+	
 	public static int getRandomPositiveInt(int upperBound) {
 		return getRandomIntervalInt(1, upperBound);
 	}
@@ -35,11 +47,7 @@ public class NumericalGenerator {
 		return (int) (1 + Math.random() * (upperBound - lowerBound + 1));
 	}
 	
-	public static int getRandomInt() {
-		return RANDOM.nextInt();
-	}
-	
-	public static double getRandomDouble(int lowerBound, int upperbound) {
-		return Math.random() * (upperbound - lowerBound) + lowerBound;
+	public static int getRandomPositiveInt() {
+		return RANDOM.nextInt(Integer.MAX_VALUE);
 	}
 }

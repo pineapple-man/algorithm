@@ -19,6 +19,7 @@ package com.pineapple;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -32,10 +33,17 @@ class SubsequencesSolutionTest {
 	
 	@Test
 	void printAllSubsequences() {
-		String sequence = "accc";
-		List<String> strings = SubsequencesSolution.printAllSubsequences(sequence);
-		for (String string : strings) {
-			log.info(string);
-		}
+		String str = "abc";
+		List<String> strings = SubsequencesSolution.printAllSubsequences(str);
+		log.info(String.format("all %s subsequence string is: ", str));
+		log.info(Arrays.toString(strings.toArray()));
+	}
+	
+	@Test
+	void printNoRepeatAllSubsequences() {
+		String str = "accc";
+		List<String> strings = SubsequencesSolution.printNoRepeatAllSubsequences(str);
+		log.info(String.format("all %s unique subsequence is:", str));
+		log.info(Arrays.toString(strings.toArray()));
 	}
 }

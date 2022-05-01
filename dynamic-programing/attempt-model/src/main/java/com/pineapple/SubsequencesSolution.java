@@ -19,7 +19,9 @@ package com.pineapple;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 子序列问题合集 子序列与子串是不连续的，子序列是可以不连续的，而子串是必须连续的
@@ -32,18 +34,47 @@ public class SubsequencesSolution {
 	/**
 	 * 计算出 sequences 所有的子序列
 	 *
-	 * @param sequences
+	 * @param str
 	 * 		原始字符串
 	 * @return java.util.List<java.lang.String>  返回子序列的集合
 	 *
 	 * @author pineapple -man
 	 * @date 2022 /5/1
 	 */
-	public static List<String> printAllSubsequences(String sequences) {
+	public static List<String> printAllSubsequences(String str) {
 		List<String> ans = new ArrayList<>();
 		Deque<Character> deque = new ArrayDeque<>();
-		attempt(sequences.toCharArray(), 0, ans, deque);
+		attempt(str.toCharArray(), 0, ans, deque);
 		return ans;
+	}
+	
+	public static List<String> printNoRepeatAllSubsequences(String str) {
+		String path = "";
+		Set<String> set = new HashSet<>();
+		uniqueSubsequenceAttempt(str.toCharArray(), 0, path, set);
+		return new ArrayList<>(set);
+	}
+	
+	/**
+	 * 查找不含邮重复元素的子序列递归尝试
+	 *
+	 * @param chars
+	 * 		输入的字符数组
+	 * @param index
+	 * 		当前决策位置
+	 * @param path
+	 * 		之前决策保存的位置
+	 * @param set
+	 * 		最终无重复元素保存的结果
+	 */
+	private static void uniqueSubsequenceAttempt(char[] chars, int index,
+	                                             String path, Set<String> set) {
+		if (index == chars.length) {
+			set.add(path);
+			return;
+		}
+		uniqueSubsequenceAttempt(chars, index + 1, path, set);
+		uniqueSubsequenceAttempt(chars, index + 1, path + chars[index], set);
 	}
 	
 	/**

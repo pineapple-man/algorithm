@@ -32,7 +32,7 @@ class NumericalGeneratorTest {
 	void getRandomPositiveInt() {
 		for (int i = 0; i < 100; i++) {
 			int randomPositiveInt = NumericalGenerator.getRandomPositiveInt();
-			log.info(String.valueOf(randomPositiveInt));
+			assert randomPositiveInt > 0;
 		}
 	}
 	

@@ -35,15 +35,15 @@ class SubsequencesSolutionTest {
 	void printAllSubsequences() {
 		String str = "abc";
 		List<String> strings = SubsequencesSolution.printAllSubsequences(str);
-		log.info(String.format("all %s subsequence string is: ", str));
-		log.info(Arrays.toString(strings.toArray()));
+		log.debug(String.format("all %s subsequence string is: ", str));
+		log.debug(Arrays.toString(strings.toArray()));
 	}
 	
 	@Test
 	void printNoRepeatAllSubsequences() {
 		String str = "accc";
 		List<String> strings = SubsequencesSolution.printNoRepeatAllSubsequences(str);
-		log.info(String.format("all %s unique subsequence is:", str));
-		log.info(Arrays.toString(strings.toArray()));
+		log.debug(String.format("all %s unique subsequence is:", str));
+		log.debug(Arrays.toString(strings.toArray()));
 	}
 }

@@ -43,11 +43,11 @@ public class Hanoi {
 	public static void hanoiMove(int n, String start, String auxiliary,
 	                             String target) {
 		if (n == 1) {
-			log.info(String.format("第 %d 层从 %s 移动到 %s", n, start, target));
+			log.debug(String.format("第 %d 层从 %s 移动到 %s", n, start, target));
 			return;
 		}
 		hanoiMove(n - 1, start, target, auxiliary);
-		log.info(String.format("第 %d 层从 %s 移动到 %s ", n, start, target));
+		log.debug(String.format("第 %d 层从 %s 移动到 %s ", n, start, target));
 		hanoiMove(n - 1, auxiliary, start, target);
 	}
 }

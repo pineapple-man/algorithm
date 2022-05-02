@@ -6,4 +6,4 @@
 
 1. 给定一个非负整数 num,如果不用循环语句，返回`>=num`，并且离 num 最近的，2 的某次方
 
-[solution-java]()
+[solution-java](src/test/java/com/pineapple/NearestNumberPowerSolutionTest.java)

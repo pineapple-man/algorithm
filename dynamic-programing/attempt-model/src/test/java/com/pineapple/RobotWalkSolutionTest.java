@@ -53,7 +53,6 @@ class RobotWalkSolutionTest {
 				
 			}
 		}
-		log.info("test success!");
 	}
 	
 	public static int ways3(int N, int start, int aim, int K) {

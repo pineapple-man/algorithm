@@ -45,7 +45,6 @@ class PlayPokerSolutionTest {
 				
 			}
 		}
-		log.info("test success!");
 	}
 	
 	public static int win3(int[] arr) {

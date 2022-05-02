@@ -62,8 +62,14 @@ class ReverseStackSolutionTest {
 	
 	@Test
 	void reverse() {
-		Stack<Integer> stack1 = (Stack<Integer>) stack.clone();
-		Stack<Integer> stack2 = (Stack<Integer>) stack.clone();
+		Stack<Integer> stack1 = new Stack<>();
+		for (Integer integer : stack) {
+			stack1.push(integer);
+		}
+		Stack<Integer> stack2 = new Stack<>();
+		for (Integer integer : stack) {
+			stack2.push(integer);
+		}
 		reverse(stack1);
 		ReverseStackSolution.reverse(stack2);
 		Assertions.assertEquals(stack2.size(), stack1.size());
@@ -71,6 +77,5 @@ class ReverseStackSolutionTest {
 		for (int i = 0; i < length; i++) {
 			Assertions.assertEquals(stack1.pop(), stack2.pop());
 		}
-		log.info("test success!");
 	}
 }

@@ -28,6 +28,7 @@
     <description>动态规划相关题目总结</description>
     <modules>
         <module>attempt-model</module>
+        <module>sample-corresponding</module>
     </modules>
     <artifactId>dynamic-programing</artifactId>
 

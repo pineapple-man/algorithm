@@ -17,6 +17,7 @@
 package com.pineapple;
 
 import lombok.extern.slf4j.Slf4j;
+import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -48,7 +49,7 @@ class PermutationsSolutionsTest {
 		return ans;
 	}
 	
-	public static void f(ArrayList<Character> rest, String path, List<String> ans) {
+	public static void f(@NotNull ArrayList<Character> rest, String path, List<String> ans) {
 		if (rest.isEmpty()) {
 			ans.add(path);
 		} else {
@@ -127,7 +128,6 @@ class PermutationsSolutionsTest {
 		for (int i = 0; i < length; i++) {
 			Assertions.assertEquals(l1.get(i), l2.get(i));
 		}
-		log.info("method success!");
 		
 	}
 	
@@ -143,7 +143,6 @@ class PermutationsSolutionsTest {
 		for (int i = 0; i < length; i++) {
 			Assertions.assertEquals(l1.get(i), l2.get(i));
 		}
-		log.info("method success!");
 	}
 	
 }

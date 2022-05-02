@@ -36,10 +36,7 @@ class HanoiTest {
 		String start = "a";
 		String auxiliary = "b";
 		String target = "c";
-//			int n = random.nextInt(4);
 		int n = 3;
-		log.info("start test");
 		Hanoi.hanoiMove(n, start, auxiliary, target);
-		log.info("test finish!");
 	}
 }

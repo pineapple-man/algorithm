@@ -68,11 +68,11 @@
 
 ### 样本对应模型
 
-以结尾位置来组织可能性
+> 以结尾位置来组织可能性
 
-1. 最长公共子序列问题[力扣链接](https://leetcode.cn/problems/longest-common-subsequence/)
+1. 最长公共子序列问题[solution-java](sample-corresponding/src/test/java/com/pineapple/SubsequencesSolutionTest.java)
 
-[solution-java]()、
+> [力扣链接](https://leetcode.cn/problems/longest-common-subsequence/)
 
 2. 马踏棋盘问题
 

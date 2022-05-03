@@ -25,15 +25,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>data-structure</artifactId>
-    <description>此项目主要记录数据结构相关题目</description>
-    <modules>
-        <module>slide-window</module>
-        <module>graph</module>
-        <module>tree</module>
-        <module>heap</module>
-    </modules>
-    <packaging>pom</packaging>
+    <artifactId>sort</artifactId>
+    <description>排序相关的算法题在这里</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

@@ -6,6 +6,22 @@
 
 滑动窗口相关的算法题目记录在[这里](slide-window/README.md)
 
+## union set
+
+并查集相关的算法题目记录在[这里]()
+
+## heap
+
+堆相关的算法题目记录在[这里](heap/README.md)
+
+## Tree
+
+数相关的算法题目记录在[这里](tree/README.md)
+
 ## Graph
 
 图相关的算法题目记录在[这里](graph/README.md)
+
+## sorted-table
+
+有序表的算法题目记录在[这里]()

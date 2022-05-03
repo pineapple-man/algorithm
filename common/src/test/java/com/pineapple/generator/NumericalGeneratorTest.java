@@ -36,4 +36,22 @@ class NumericalGeneratorTest {
 		}
 	}
 	
+	@Test
+	void getRandomIntervalInt() {
+		int lowerBoundCount = 0;
+		int upperBoundCount = 0;
+		int lowerBound = 0;
+		int upperBound = 3;
+		for (int i = 0; i < 100; i++) {
+			int i1 = NumericalGenerator.getRandomIntervalInt(lowerBound, upperBound);
+			log.debug(String.valueOf(i1));
+			if (i1 == lowerBound) {
+				lowerBoundCount++;
+			} else if (i1 == upperBound) {
+				upperBoundCount++;
+			}
+		}
+		log.debug(String.valueOf(lowerBoundCount));
+		log.debug(String.valueOf(upperBoundCount));
+	}
 }

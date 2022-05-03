@@ -27,24 +27,60 @@ import java.util.Random;
 public class NumericalGenerator {
 	private static final Random RANDOM = new Random();
 	
+	/**
+	 * 随机范围上的整数
+	 *
+	 * @return 生成一个在 [-2^31, 2^31-1] 区间上的整数
+	 */
 	public static int getRandomInt() {
 		return RANDOM.nextInt();
 	}
 	
+	/**
+	 * 生成[lower,upper] 区间上的随机浮点数
+	 *
+	 * @param lowerBound
+	 * 		下界
+	 * @param upperbound
+	 * 		上界
+	 * @return 随机数
+	 */
 	public static double getRandomDouble(int lowerBound, int upperbound) {
-		return Math.random() * (upperbound - lowerBound) + lowerBound;
+		return Math.random() * (upperbound - lowerBound + 1) + lowerBound;
 	}
 	
+	/**
+	 * 生成一个 [0,100] 范围上的随机数
+	 *
+	 * @return 生成的随机数
+	 */
 	public static int getLittleRandomPositiveInt() {
 		return getRandomPositiveInt(100);
 	}
 	
+	/**
+	 * 生成一个[1,upper]区间上的随机数
+	 *
+	 * @param upperBound
+	 * 		正数上界
+	 * @return 随机数
+	 */
 	public static int getRandomPositiveInt(int upperBound) {
+		assert upperBound > 0;
 		return getRandomIntervalInt(1, upperBound);
 	}
 	
+	/**
+	 * 生成[lower,high]区间上的随机数
+	 *
+	 * @param lowerBound
+	 * 		随机数的下界
+	 * @param upperBound
+	 * 		随机数的上界
+	 * @return 在区间[lowerBound, upperBound] 上的数
+	 */
 	public static int getRandomIntervalInt(int lowerBound, int upperBound) {
-		return (int) (1 + Math.random() * (upperBound - lowerBound + 1));
+		return lowerBound + (int) (Math.random() * (upperBound - lowerBound + 1));
 	}
 	
 	public static int getRandomPositiveInt() {

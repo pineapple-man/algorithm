@@ -39,7 +39,9 @@ class KnapsackSolutionTest {
 			int[] v = ArrayGenerator.lengthFixed1dIntervalIntArray(length, 0, bag);
 			int i1 = dp(w, v, bag);
 			int i2 = KnapsackSolution.maxValue(w, v, bag);
+			int i3 = KnapsackSolution.maxValueDp(w, v, bag);
 			Assertions.assertEquals(i1, i2);
+			Assertions.assertEquals(i1, i3);
 			
 		}
 	}

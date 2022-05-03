@@ -23,10 +23,10 @@
 
 1. 假设有排成一行的 N 个位置，记为 1～N，N 一定大于或等于2。 开始时机器人在其中的 M 位置上（M 一定是 1～N 中的一个）。如果机器人来到 1 位置，那么下一步只能往右来到 2 位置；如果机器人来到 N
    位置，那么下一步只能往左来到 N-1 位置；如果机器人来到中间位置，那么下一步可以往左或者往右走。规定机器人必须走 K 步，最终能来到 P 位置（ P 也是 1 ～ N
-   中的一个）的方法有多少中？[solution-java](attempt-model/src/main/java/com/pineapple/RobotWalkSolution.java)
+   中的一个）的方法有多少中？[solution-java](attempt-model/src/test/java/com/pineapple/RobotWalkSolutionTest.java)
 
 
-2. 背包问题。[solution-java]()、
+2. 背包问题。[solution-java](attempt-model/src/test/java/com/pineapple/KnapsackSolutionTest.java)
 
 
 3. 有下面一张转换表(1->a,2->b,...,26->z),那么一个数字字符串，比如：111，就可以转化为AAA, KA 和 AK，给定一个只有数字字符组成的字符串 string,返回有多少种转化结果。

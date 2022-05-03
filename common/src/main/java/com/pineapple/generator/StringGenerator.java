@@ -44,4 +44,44 @@ public class StringGenerator {
 		SB.delete(0, SB.length());
 		return generatorString;
 	}
+	
+	/**
+	 * 生成长度随机的字母字符串
+	 *
+	 * @return 生成的字符串
+	 */
+	public static String getLowerCaseString() {
+		int n = NumericalGenerator.getLittleRandomPositiveInt();
+		return getLengthFixedIntString(n);
+	}
+	
+	/**
+	 * 返回最大长度的只有小写字母的字符串
+	 *
+	 * @param maxLength
+	 * 		字符串的最大长度
+	 * @return 生成的字符串
+	 */
+	public static String getRandomLengthLowerCaseString(int maxLength) {
+		int n = NumericalGenerator.getRandomPositiveInt(maxLength);
+		return getLengthFixedLowerCaseString(n);
+	}
+	
+	/**
+	 * 生成长度固定的字母字符串
+	 *
+	 * @param length
+	 * 		字符串长度
+	 * @return 生成的字母字符串
+	 */
+	public static String getLengthFixedLowerCaseString(int length) {
+		for (int i = 0; i < length; i++) {
+			// 'a' -> 97 'z' -> 122
+			int random = NumericalGenerator.getRandomIntervalInt(97, 122);
+			SB.append(Character.valueOf((char) random));
+		}
+		String generatorString = SB.toString();
+		SB.delete(0, SB.length());
+		return generatorString;
+	}
 }

@@ -53,4 +53,27 @@ class StringGeneratorTest {
 			Assertions.assertEquals(s.length(), n);
 		}
 	}
+	
+	@Test
+	void getLowercaseString() {
+		for (int i = 0; i < epoch; i++) {
+			String alphaString = StringGenerator.getLowerCaseString();
+			for (int j = 0; j < alphaString.length(); j++) {
+				Assertions.assertTrue(Character.isDigit(alphaString.charAt(j)));
+			}
+		}
+	}
+	
+	@Test
+	void getLengthFixedLowerCaseString() {
+		for (int i = 0; i < epoch; i++) {
+			int n = NumericalGenerator.getLittleRandomPositiveInt();
+			String s = StringGenerator.getLengthFixedLowerCaseString(n);
+			Assertions.assertEquals(s.length(), n);
+			log.debug(s);
+			for (int j = 0; j < n; j++) {
+				Assertions.assertTrue(Character.isLowerCase(s.charAt(j)));
+			}
+		}
+	}
 }

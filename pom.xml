@@ -27,6 +27,8 @@
         <module>dynamic-programing</module>
         <module>common</module>
         <module>bit</module>
+        <module>data-structure</module>
+        <module>trickys</module>
     </modules>
     <packaging>pom</packaging>
     <description>算法总结</description>

@@ -30,14 +30,13 @@
 
 
 3. 有下面一张转换表(1->a,2->b,...,26->z),那么一个数字字符串，比如：111，就可以转化为AAA, KA 和 AK，给定一个只有数字字符组成的字符串
-   string,返回有多少种转化结果。[solution-java]()、
-
+   string,返回有多少种转化结果。[solution-java](attempt-model/src/test/java/com/pineapple/ConvertSolutionTest.java)
 
 4. 给定一个字符串 str ,给定一个字符串类型的数组 arr,出现的字符都是小写英文。arr 每一个字符串，代表一张贴纸，你可以把单个字符剪开使用，目的是拼出 str 来。返回需要至少多少张贴纸可以完成任务。 例如： str = "
-   babac" arr = {"ba","c","abcd"}，至少需要两张贴纸"ba"和"abcd",因为使用这两张贴纸，把每一个字符单独剪开，含有2个a，2个b、1个c。是可以拼出str的。所以返回2。
-   [力扣链接](https://leetcode.cn/problems/stickers-to-spell-word/)
+   babac" arr = {"ba","c","abcd"}，至少需要两张贴纸"ba"和"abcd"
+   ,因为使用这两张贴纸，把每一个字符单独剪开，含有2个a，2个b、1个c。是可以拼出str的。所以返回2。[solution-java]()
 
-[solution-java]()、
+> [力扣链接](https://leetcode.cn/problems/stickers-to-spell-word/)
 
 6. 给定一个字符串 str ，返回这个字符串的最长回文子序列。比如：str="a12b3c43def2ghi1kpm"最长回文子序列是"1234321"或者"123c321"，返回长度7
 

@@ -1,0 +1,47 @@
+/*
+ * Copyright (c) 2022. pineapple-man
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.pineapple.generator;
+
+/**
+ * String 相关用例生成器
+ *
+ * @author pineapple-man
+ * @version 1.0
+ * @date 2022/5/3 11:06
+ */
+
+
+public class StringGenerator {
+	private static final StringBuilder SB = new StringBuilder();
+	
+	/**
+	 * @return 返回长度小于 100 的整型字符串
+	 */
+	public static String getIntString() {
+		int length = NumericalGenerator.getLittleRandomPositiveInt();
+		return getLengthFixedIntString(length);
+	}
+	
+	public static String getLengthFixedIntString(int length) {
+		for (int i = 0; i < length; i++) {
+			SB.append(NumericalGenerator.getRandomIntervalInt(0, 9));
+		}
+		String generatorString = SB.toString();
+		SB.delete(0, SB.length());
+		return generatorString;
+	}
+}

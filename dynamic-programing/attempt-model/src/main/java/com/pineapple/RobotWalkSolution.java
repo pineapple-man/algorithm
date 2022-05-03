@@ -71,7 +71,7 @@ public class RobotWalkSolution {
 		return Recursive.process(n, m, k, p);
 	}
 	
-	static class DynamicProgramming {
+	private static class DynamicProgramming {
 		static int process(int n, int current, int step, int end) {
 			assert current <= n;
 			int[][] dp = new int[n + 1][step + 1];
@@ -87,7 +87,7 @@ public class RobotWalkSolution {
 		}
 	}
 	
-	static class MemorySearch {
+	private static class MemorySearch {
 		static int process(int n, int current, int step, int end, int[][] cache) {
 			if (cache[current][step] != -1) {
 				return cache[current][step];
@@ -110,7 +110,7 @@ public class RobotWalkSolution {
 		}
 	}
 	
-	static class Recursive {
+	private static class Recursive {
 		
 		static int process(int n, int current, int step, int end) {
 			if (step == 0) {

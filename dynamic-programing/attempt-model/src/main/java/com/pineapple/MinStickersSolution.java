@@ -67,6 +67,7 @@ public class MinStickersSolution {
 		}
 		int min = Integer.MAX_VALUE;
 		for (int[] sticker : stickers) {
+			//查看当前贴纸是否有 target 开头的字符，一种快速的剪枝操作
 			if (sticker[target.charAt(0) - 'a'] > 0) {
 				StringBuilder sb = new StringBuilder();
 				for (int i = 0; i < 26; i++) {

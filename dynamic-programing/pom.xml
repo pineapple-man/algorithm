@@ -29,6 +29,7 @@
     <modules>
         <module>attempt-model</module>
         <module>sample-corresponding</module>
+        <module>range-attempt</module>
     </modules>
     <artifactId>dynamic-programing</artifactId>
 

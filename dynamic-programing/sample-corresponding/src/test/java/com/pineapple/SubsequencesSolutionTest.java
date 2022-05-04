@@ -37,6 +37,23 @@ class SubsequencesSolutionTest {
 	}
 	
 	/**
+	 * 最长公共子序列问题
+	 *
+	 * @author pineapple-man
+	 * @date 2022/5/5
+	 */
+	@Test
+	void longestCommonSubsequenceDp() {
+		for (int i = 0; i < epoch; i++) {
+			String s1 = StringGenerator.getRandomLengthLowerCaseString(1000);
+			String s2 = StringGenerator.getRandomLengthLowerCaseString(1000);
+			int i1 = longestCommonSubsequence(s1, s2);
+			int i2 = SubsequencesSolution.longestCommonSubsequenceDp(s1, s2);
+			Assertions.assertEquals(i1, i2);
+		}
+	}
+	
+	/**
 	 * Longest common subsequence 递归版本,由于非常耗时，所以仅进行五个样本的测试
 	 */
 	@Test
@@ -78,13 +95,48 @@ class SubsequencesSolutionTest {
 	}
 	
 	@Test
-	void longestCommonSubsequenceDp() {
-		for (int i = 0; i < epoch; i++) {
-			String s1 = StringGenerator.getRandomLengthLowerCaseString(1000);
-			String s2 = StringGenerator.getRandomLengthLowerCaseString(1000);
-			int i1 = longestCommonSubsequence(s1, s2);
-			int i2 = SubsequencesSolution.longestCommonSubsequenceDp(s1, s2);
+	void longestPalindromeSubsequenceRecursive() {
+		for (int i = 0; i < 4; i++) {
+			String s = StringGenerator.getRandomLengthLowerCaseString(20);
+			int i1 = longestPalindromeSubsequence(s);
+			int i2 = SubsequencesSolution.longestPalindromeSubsequenceRecursive(s);
 			Assertions.assertEquals(i1, i2);
+		}
+	}
+	
+	public static int longestPalindromeSubsequence(String s) {
+		if (s == null || s.length() == 0) {
+			return 0;
+		}
+		if (s.length() == 1) {
+			return 1;
+		}
+		char[] str = s.toCharArray();
+		int N = str.length;
+		int[][] dp = new int[N][N];
+		dp[N - 1][N - 1] = 1;
+		for (int i = 0; i < N - 1; i++) {
+			dp[i][i] = 1;
+			dp[i][i + 1] = str[i] == str[i + 1] ? 2 : 1;
+		}
+		for (int i = N - 3; i >= 0; i--) {
+			for (int j = i + 2; j < N; j++) {
+				dp[i][j] = Math.max(dp[i][j - 1], dp[i + 1][j]);
+				if (str[i] == str[j]) {
+					dp[i][j] = Math.max(dp[i][j], dp[i + 1][j - 1] + 2);
+				}
+			}
+		}
+		return dp[0][N - 1];
+	}
+	
+	@Test
+	void longestPalindromeSubsequenceDp() {
+		for (int i = 0; i < epoch; i++) {
+			String s = StringGenerator.getRandomLengthLowerCaseString(1000);
+			int i1 = longestPalindromeSubsequence(s);
+			int i2 = SubsequencesSolution.longestPalindromeSubsequenceDp(s);
+			Assertions.assertEquals(i1,i2);
 		}
 	}
 }

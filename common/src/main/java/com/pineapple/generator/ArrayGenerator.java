@@ -40,4 +40,12 @@ public class ArrayGenerator {
 		}
 		return arr;
 	}
+	
+	public static int[] lengthFixed1dIntArray(int length) {
+		int[] arr = new int[length];
+		for (int i = 0; i < length; i++) {
+			arr[i] = NumericalGenerator.getRandomInt();
+		}
+		return arr;
+	}
 }

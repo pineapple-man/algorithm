@@ -1,3 +1,19 @@
+/*
+ * Copyright (c) 2022. pineapple-man
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.pineapple;
 
 /**
@@ -22,23 +38,26 @@ public class MergeSort {
 		int mid = (r - l) / 2 + l;
 		mergeSort(arr, l, mid);
 		mergeSort(arr, mid + 1, r);
-		arr = merge(arr, l, mid, r);
+		merge(arr, l, mid, r);
 	}
 	
-	private static int[] merge(int[] arr, int l, int mid, int r) {
+	private static void merge(int[] arr, int l, int mid, int r) {
 		int[] ans = new int[r - l + 1];
+		int left = l;
 		int index = 0;
 		int leftLength = mid;
-		while (l < leftLength && mid < r) {
+		mid++;
+		while (l <= leftLength && mid <= r) {
 			ans[index++] = arr[l] < arr[mid] ? arr[l++] : arr[mid++];
 		}
-		while (l < leftLength) {
+		while (l <= leftLength) {
 			ans[index++] = arr[l++];
 		}
-		while (mid < r) {
+		while (mid <= r) {
 			ans[index++] = arr[mid++];
 		}
-		
-		return ans;
+		for (int i = 0; i < ans.length; i++) {
+			arr[left++] = ans[i];
+		}
 	}
 }

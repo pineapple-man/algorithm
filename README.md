@@ -10,7 +10,7 @@
 
 # Design
 
-特殊结构相关的题目记录在[这里]()
+特殊结构相关的题目记录在[这里](specific-data-structure/README.md)
 
 # sort
 

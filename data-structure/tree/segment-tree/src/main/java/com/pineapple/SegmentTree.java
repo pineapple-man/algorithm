@@ -22,6 +22,35 @@ package com.pineapple;
  * @date 2022/5/3 16:08
  */
 
-public class SegmentTree {
-
+public class SegmentTree<T> {
+	/**
+	 * 线段数，0 位置不保存任何数值
+	 */
+	int maxLength;
+	T[] data;
+	T[] lazyCache;
+	T[] sum;
+	T[] change;
+	boolean[] update;
+	
+	public SegmentTree() {
+	}
+	
+	public SegmentTree(T[] data) {
+		this.data = data;
+		int length = data.length;
+		maxLength = length * 4;
+	}
+	
+	void add(int L, int R, int value, int l, int r, int root) {
+	
+	}
+	
+	void update(int L, int R, int value, int l, int r, int root) {
+	
+	}
+	
+	void query(int L, int R, int root) {
+	
+	}
 }

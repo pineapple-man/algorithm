@@ -79,6 +79,25 @@ public class DutchFlagSolution {
 	 * @return 划分后的数组
 	 */
 	public static int[] partition(int[] arr, int l, int r) {
+		if (l < 0 || r > arr.length) {
+			return null;
+		}
+		if (l >= r) {
+			return arr;
+		}
+		int less = l - 1;
+		int more = r;
+		int target = arr[more];
+		while (l < more) {
+			if (arr[l] < target) {
+				Utils.swap(arr, ++less, l++);
+			} else if (arr[l] > target) {
+				Utils.swap(arr, --more, l);
+			} else {
+				l++;
+			}
+		}
+		Utils.swap(arr, target, l);
 		return arr;
 	}
 }

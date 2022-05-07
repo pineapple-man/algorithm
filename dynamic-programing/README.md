@@ -74,16 +74,14 @@
 
 > [力扣链接](https://leetcode.cn/problems/longest-common-subsequence/)
 
-2. 马踏棋盘问题
-
-[solution-java]()、
+2. 马踏棋盘问题[solution-java](sample-corresponding/src/test/java/com/pineapple/KnightsTourTest.java)
 
 3. 给定 5 个参数，N、W、
 
 
-10. 给定三个参数，N、M、K，怪兽有 N 滴血，等着英雄来砍自己。英雄每一次打击，都会让怪兽流失[0~M]的血量，到底流失多少？每一次在[0~M]上等概率的获取一个值。求K次打击之后，英雄把怪兽砍死的概率
+10. 给定三个参数，N、M、K，怪兽有 N 滴血，等着英雄来砍自己。英雄每一次打击，都会让怪兽流失`[0~M]`的血量，到底流失多少？每一次在`[0~M]`上等概率的获取一个值。求K次打击之后，英雄把怪兽砍死的概率
 
-[solution-java]()、
+[solution-java]()
 
 ### 业务限制模型
 
@@ -116,7 +114,7 @@
 
 给定一个正数，求它的裂开方法数，要求后面裂开的数字必须大于等于前面裂开的数字。例如： 3 = 1+1+1 = 1+2 ; 5 = 1+1+1+1+1 = 1+1+1+2 = 1+2+2 = 1+1+3（整数拆分问题）
 
-[solution-java]()、
+[solution-java]()
 
 ### 四边形不等式优化
 

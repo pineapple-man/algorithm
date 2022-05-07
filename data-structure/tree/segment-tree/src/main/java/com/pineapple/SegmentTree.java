@@ -16,13 +16,15 @@
 
 package com.pineapple;
 
+import java.util.Comparator;
+
 /**
  * @author pineapple-man
  * @version 1.0
  * @date 2022/5/3 16:08
  */
 
-public class SegmentTree<T> {
+public class SegmentTree<T extends Comparator<T>> {
 	/**
 	 * 线段数，0 位置不保存任何数值
 	 */

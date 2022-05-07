@@ -24,6 +24,10 @@
 
 动态规划相关的算法记录在[这里](dynamic-programing/README.md)
 
+# travel
+
+遍历相关的算法记录在[这里](travel/README.md)
+
 # TODO
 
 - [ ] 完成基础数据结构常见题目总结（链表、队列、栈、二叉树）

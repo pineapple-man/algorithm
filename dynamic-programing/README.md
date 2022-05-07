@@ -63,8 +63,8 @@
 1. 给定一个整型数组 arr, 代表数值不同的纸牌排成一条线。玩家 A 和玩家 B 依次拿走每张纸牌。规定玩家 A 先拿，玩家 B
    后拿。但是每个玩家每次只能拿走最左或最右的纸牌。假设玩家A和玩家B都绝顶聪明。请返回最后获胜者的分数。[solution-java](attempt-model/src/test/java/com/pineapple/PlayPokerSolutionTest.java)
 
-2. 给定一个字符串 str ，返回这个字符串的最长回文子序列。比如：str="a12b3c43def2ghi1kpm"最长回文子序列是"1234321"或者"123c321"，返回长度7。[solution-java]
-   (sample-corresponding/src/test/java/com/pineapple/SubsequencesSolutionTest.java)
+2. 给定一个字符串 str ，返回这个字符串的最长回文子序列。比如：str="a12b3c43def2ghi1kpm"最长回文子序列是"1234321"或者"123c321"
+   ，返回长度7。[solution-java](sample-corresponding/src/test/java/com/pineapple/SubsequencesSolutionTest.java)
 
 ### 样本对应模型
 
@@ -125,3 +125,6 @@
 
 给定一个非负数组arr，长度为 N，那么有 N-1 种方案，可以把 arr 切分成左右两部分。每一种方案都有，min{左部分累加和,右部分累加和}。求这么多方案种，min{做部分累加和，有部分累加和}
 的最大值是多少？（整个过程要求时间复杂度为 O(N))[solution-java]()
+
+给定一个数组 arr,代表每个人的能力值。再给定一个非负数 k。如果两个人能力差值正好为 k，那么可以凑在一起比赛。一局比赛只有两个人，请返回最多可以同时有多少场比赛。[solution-java]()
+

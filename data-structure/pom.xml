@@ -32,6 +32,11 @@
         <module>graph</module>
         <module>tree</module>
         <module>heap</module>
+        <module>linked-list</module>
+        <module>stack</module>
+        <module>queue</module>
+        <module>hash-table</module>
+        <module>sorted-table</module>
     </modules>
     <packaging>pom</packaging>
     <dependencies>

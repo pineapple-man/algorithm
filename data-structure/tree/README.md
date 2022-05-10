@@ -3,8 +3,12 @@
 ## Binary Tree
 
 给定三个参数：二叉树的头节点 head,树上某个节点 target,正数 k。从 target 节点开始，二叉树可以向上走或者向下走，请返回与 target 的距离是 k 的所有节点。[solution-java]()
-## Binary Search Tree
 
+## Trie(prefix tree)
+
+前缀树相关的算法在[这里]()
+
+## Binary Search Tree
 
 ## Dictionary Tree
 
@@ -54,3 +58,5 @@
 ## Index Tree
 
 ## B Tree
+
+## B plus Tree

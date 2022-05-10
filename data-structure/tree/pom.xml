@@ -28,6 +28,7 @@
     <modules>
         <module>segment-tree</module>
         <module>binary-tree</module>
+        <module>trie</module>
     </modules>
 
     <artifactId>tree</artifactId>

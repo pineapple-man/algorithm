@@ -64,4 +64,27 @@ class NearestNumberPowerSolutionTest {
 		}
 		return ans;
 	}
+	
+	@Test
+	void testNearest() {
+		int epoch = NumericalGenerator.getRandomPositiveInt(100);
+		for (int i = 0; i < epoch; i++) {
+			int num = NumericalGenerator.getRandomPositiveInt();
+			int target = 1 << NumericalGenerator.getRandomPositiveInt(32);
+			int i1 = getNearest(num, target);
+			int i2 = NearestNumberPowerSolution.nearest(num, target);
+			Assertions.assertEquals(i1, i2);
+		}
+	}
+	
+	public static int getNearest(int num, int target) {
+		int ans = 0;
+		for (int i = 0; target * i >= 0; i++) {
+			if (target * i >= num) {
+				ans = target * i;
+				break;
+			}
+		}
+		return ans;
+	}
 }

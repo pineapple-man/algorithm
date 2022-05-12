@@ -39,4 +39,14 @@ public class NearestNumberPowerSolution {
 		num |= num >>> 16;
 		return (num < 0) ? 1 : num + 1;
 	}
+	
+	/**
+	 * 找到 arr >= num 且 arr 是 target 倍数的最小数,target 必须是 2 的幂。
+	 */
+	public static int nearest(int num, int target) {
+		if (num + target < 0) {
+			return 0;
+		}
+		return (num + target - 1) & (-target);
+	}
 }

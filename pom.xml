@@ -28,7 +28,7 @@
         <module>common</module>
         <module>bit</module>
         <module>data-structure</module>
-        <module>tricks</module>
+        <module>trickys</module>
         <module>sort</module>
         <module>specific-data-structure</module>
         <module>greedy</module>

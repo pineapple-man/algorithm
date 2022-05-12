@@ -28,10 +28,12 @@
         <module>common</module>
         <module>bit</module>
         <module>data-structure</module>
-        <module>trickys</module>
+        <module>tricks</module>
         <module>sort</module>
         <module>specific-data-structure</module>
+        <module>greedy</module>
         <module>travel</module>
+        <module>binary-search</module>
     </modules>
     <packaging>pom</packaging>
     <description>算法总结</description>

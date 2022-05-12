@@ -8,13 +8,21 @@
 
 文档中出现出现这样的超链接：[solution-java]() 表示对应的题目的Java代码的测试文件链接，可以通过查看对应的测试文件了解对应题目的详细算法求解实现
 
+# sort
+
+排序相关的题目记录在[这里](sort/README.md)
+
+# Binary Search
+
+二分法相关的题目记录在[这里]()
+
 # Design
 
 特殊结构相关的题目记录在[这里](specific-data-structure/README.md)
 
-# sort
+# hash
 
-排序相关的题目记录在[这里](sort/README.md)
+哈希相关的题目记录在[这里](hash/README.md)
 
 # Data Structure
 

@@ -2,7 +2,8 @@
 
 ## Binary Tree
 
-给定三个参数：二叉树的头节点 head,树上某个节点 target,正数 k。从 target 节点开始，二叉树可以向上走或者向下走，请返回与 target 的距离是 k 的所有节点。[solution-java]()
+[863. 二叉树中所有距离为 K 的结点](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/)
+[solution-java]()
 
 ## Trie(prefix tree)
 
@@ -10,6 +11,7 @@
 
 ## Binary Search Tree
 
+[449. 序列化和反序列化二叉搜索树](https://leetcode.cn/problems/serialize-and-deserialize-bst/)
 ## Dictionary Tree
 
 ## Segment-Tree

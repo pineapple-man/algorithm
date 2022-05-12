@@ -2,6 +2,18 @@
 
 排序是算法中很重要的一块，此模块将主要记录计算机领域中那些精彩绝伦的排序算法及其应用。
 
+## Bubble Sort
+
+冒泡排序是比较简单理解的一个排序方法，具体的代码实现在[这里](src/main/java/com/pineapple/BubbleSort.java)
+
+## Insert Sort
+
+插入排序具体的代码实现在[这里](src/main/java/com/pineapple/InsertSort.java)
+
+## Select Sort
+
+选择排序具体的代码实现在[这里](src/main/java/com/pineapple/SelectSort.java)
+
 ## merge sort
 
 时间复杂度为O(N*logN),空间复杂度O(),具体的代码实现在[这里](src/main/java/com/pineapple/MergeSort.java)

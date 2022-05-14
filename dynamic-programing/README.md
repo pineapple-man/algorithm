@@ -35,7 +35,8 @@
 
 4. 给定一个字符串 str ,给定一个字符串类型的数组 arr,出现的字符都是小写英文。arr 每一个字符串，代表一张贴纸，你可以把单个字符剪开使用，目的是拼出 str 来。返回需要至少多少张贴纸可以完成任务。 例如： str = "
    babac" arr = {"ba","c","abcd"}，至少需要两张贴纸"ba"和"abcd"
-   ,因为使用这两张贴纸，把每一个字符单独剪开，含有2个a，2个b、1个c。是可以拼出str的。所以返回2。[solution-java](attempt-model/src/test/java/com/pineapple/MinStickersSolutionTest.java)
+   ,因为使用这两张贴纸，把每一个字符单独剪开，含有2个a，2个b、1个c。是可以拼出str的。所以返回2。
+[solution-java](attempt-model/src/test/java/com/pineapple/MinStickersSolutionTest.java),[solution-golang]()
 
 > [力扣链接](https://leetcode.cn/problems/stickers-to-spell-word/)
 

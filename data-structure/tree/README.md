@@ -2,9 +2,10 @@
 
 ## Binary Tree
 
-[863. 二叉树中所有距离为 K 的结点](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/)
-[solution-java]()
+- [863. 二叉树中所有距离为 K 的结点](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/)
+  [solution-java]()
 
+- [1022. 从根到叶的二进制数之和](https://leetcode.cn/problems/sum-of-root-to-leaf-binary-numbers/)
 ## Trie(prefix tree)
 
 前缀树相关的算法在[这里](trie/src/test/java/com/pineapple/TrieTest.java)

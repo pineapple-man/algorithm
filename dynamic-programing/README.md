@@ -129,3 +129,4 @@
 
 给定一个数组 arr,代表每个人的能力值。再给定一个非负数 k。如果两个人能力差值正好为 k，那么可以凑在一起比赛。一局比赛只有两个人，请返回最多可以同时有多少场比赛。[solution-java]()
 
+[730. 统计不同回文子序列](https://leetcode.cn/problems/count-different-palindromic-subsequences/)

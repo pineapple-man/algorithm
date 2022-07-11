@@ -35,6 +35,7 @@
         <module>travel</module>
         <module>binary-search</module>
         <module>convex-hull</module>
+        <module>hash</module>
     </modules>
     <packaging>pom</packaging>
     <description>算法总结</description>

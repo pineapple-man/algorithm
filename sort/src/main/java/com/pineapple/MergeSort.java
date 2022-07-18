@@ -23,12 +23,11 @@ package com.pineapple;
  * @date 2022-05-05 12:39
  */
 public class MergeSort {
-	public static int[] sort(int[] arr) {
+	public static void sort(int[] arr) {
 		if (arr == null || arr.length == 1) {
-			return arr;
+			return;
 		}
 		mergeSort(arr, 0, arr.length - 1);
-		return arr;
 	}
 	
 	private static void mergeSort(int[] arr, int l, int r) {
@@ -56,8 +55,8 @@ public class MergeSort {
 		while (mid <= r) {
 			ans[index++] = arr[mid++];
 		}
-		for (int i = 0; i < ans.length; i++) {
-			arr[left++] = ans[i];
+		for (int an : ans) {
+			arr[left++] = an;
 		}
 	}
 }

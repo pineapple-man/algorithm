@@ -1,5 +1,8 @@
 ## preliminary
 
+二叉树的递归套路
+答案和头有关的时候，答案和头无关的时候
+
 ## Binary Tree
 
 - [863. 二叉树中所有距离为 K 的结点](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/)
@@ -35,7 +38,8 @@
 
 > [力扣链接](https://leetcode.cn/problems/falling-squares/)
 
-2. 1～N 有 N 个房子，56个颜色，可以任意的选择执行 update(L,R,color)操作，即在`[L,R]`上的房子都刷成`color`颜色，以及`query(L,R)`操作，查询`[L,R]`上的颜色种类
+2. 1～N 有 N 个房子，56个颜色，可以任意的选择执行 update(L,R,color)操作，即在`[L,R]`上的房子都刷成`color`
+   颜色，以及`query(L,R)`操作，查询`[L,R]`上的颜色种类
 
 > > 假设我们有一个数组：
 >
@@ -58,7 +62,8 @@
 >
 >
 > 作者：AC_OIer
-> 链接：https://leetcode-cn.com/problems/range-sum-query-mutable/solution/guan-yu-ge-lei-qu-jian-he-wen-ti-ru-he-x-41hv/
+>
+链接：https://leetcode-cn.com/problems/range-sum-query-mutable/solution/guan-yu-ge-lei-qu-jian-he-wen-ti-ru-he-x-41hv/
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
@@ -67,3 +72,8 @@
 ## B Tree
 
 ## B plus Tree
+
+> 给定一个二叉树的头节点 head,路径的规定有以下三种不同的规定
+> - 路径必须是头节点出发，到叶节点为止，返回最大路径和
+> - 路径可以从任何节点出发，但必须往下走到任何节点，返回最大路径和
+> - 

@@ -14,32 +14,27 @@
  * limitations under the License.
  */
 
-package main
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-func lenLongestFibSubSeq(arr []int) (ans int) {
-	n := len(arr)
-	indices := make(map[int]int, n)
-	for i, x := range arr {
-		indices[x] = i
-	}
-	dp := make([][]int, n)
-	for i := range dp {
-		dp[i] = make([]int, n)
-	}
-	for i, x := range arr {
-		for j := n - 1; j >= 0 && arr[j]*2 > x; j-- {
-			if k, ok := indices[x-arr[j]]; ok {
-				dp[j][i] = max(dp[k][j]+1, 3)
-				ans = max(ans, dp[j][i])
-			}
-		}
-	}
-	return
-}
+/**
+ * @author pineapple-man
+ * @version 1.0
+ * @date 2022/9/16 18:21
+ */
 
-func max(a, b int) int {
-	if b > a {
-		return b
+class P2Test {
+	
+	@Test
+	void solution() {
+		int[][] square = new int[][]{
+				{1, 1, 0, 0, 1, 0, 1},
+				{0, 1, 1, 1, 1, 0, 1},
+				{0, 1, 0, 0, 1, 1, 0},
+				{0, 1, 0, 0, 1, 1, 1},
+				{0, 1, 1, 1, 1, 1, 1},
+		};
+		int ans = P2.solution(square);
+		Assertions.assertEquals(ans, 4);
 	}
-	return a
 }

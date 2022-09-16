@@ -4,7 +4,8 @@
 
 ## Bubble Sort
 
-冒泡排序是比较简单理解的一个排序方法，具体的代码实现在[这里](src/main/java/com/pineapple/BubbleSort.java)
+冒泡排序是比较简单理解的一个排序方法，
+具体的代码实现在[这里](src/main/java/com/pineapple/BubbleSort.java)
 
 ## Insert Sort
 
@@ -16,7 +17,8 @@
 
 ## merge sort
 
-时间复杂度为O(N*logN),空间复杂度O(),具体的代码实现在[这里](src/main/java/com/pineapple/MergeSort.java)
+时间复杂度为O(N*logN),空间复杂度O(logN),
+具体的代码实现在[这里](src/main/java/com/pineapple/MergeSort.java)
 
 1. 小和问题。对于每一个数组，计算出其左边比它小的元素和[solution-java]()
 

@@ -33,10 +33,12 @@
    string,返回有多少种转化结果。[solution-java](attempt-model/src/test/java/com/pineapple/ConvertSolutionTest.java)
 
 
-4. 给定一个字符串 str ,给定一个字符串类型的数组 arr,出现的字符都是小写英文。arr 每一个字符串，代表一张贴纸，你可以把单个字符剪开使用，目的是拼出 str 来。返回需要至少多少张贴纸可以完成任务。 例如： str = "
+4. 给定一个字符串 str ,给定一个字符串类型的数组 arr,出现的字符都是小写英文。arr
+   每一个字符串，代表一张贴纸，你可以把单个字符剪开使用，目的是拼出 str 来。返回需要至少多少张贴纸可以完成任务。 例如： str = "
    babac" arr = {"ba","c","abcd"}，至少需要两张贴纸"ba"和"abcd"
    ,因为使用这两张贴纸，把每一个字符单独剪开，含有2个a，2个b、1个c。是可以拼出str的。所以返回2。
-[solution-java](attempt-model/src/test/java/com/pineapple/MinStickersSolutionTest.java),[solution-golang]()
+   [solution-java](attempt-model/src/test/java/com/pineapple/MinStickersSolutionTest.java)
+   ,[solution-golang]()
 
 > [力扣链接](https://leetcode.cn/problems/stickers-to-spell-word/)
 
@@ -124,11 +126,23 @@
 
 给定一个二维数组 matrix，你可以从任何位置出发，走出上下左右四个方向，返回能走出来的最长的递增链长度。
 
-给定一个非负数组arr，长度为 N，那么有 N-1 种方案，可以把 arr 切分成左右两部分。每一种方案都有，min{左部分累加和,右部分累加和}。求这么多方案种，min{做部分累加和，有部分累加和}
+给定一个非负数组arr，长度为 N，那么有 N-1 种方案，可以把 arr
+切分成左右两部分。每一种方案都有，min{左部分累加和,右部分累加和}。求这么多方案种，min{做部分累加和，有部分累加和}
 的最大值是多少？（整个过程要求时间复杂度为 O(N))[solution-java]()
 
-给定一个数组 arr,代表每个人的能力值。再给定一个非负数 k。如果两个人能力差值正好为 k，那么可以凑在一起比赛。一局比赛只有两个人，请返回最多可以同时有多少场比赛。[solution-java]()
+给定一个数组 arr,代表每个人的能力值。再给定一个非负数 k。如果两个人能力差值正好为
+k，那么可以凑在一起比赛。一局比赛只有两个人，请返回最多可以同时有多少场比赛。[solution-java]()
 
 [730. 统计不同回文子序列](https://leetcode.cn/problems/count-different-palindromic-subsequences/)
 
 [873. 最长的斐波那契子序列的长度](https://leetcode.cn/problems/length-of-longest-fibonacci-subsequence/)
+
+开头的情况下怎么样，结尾的情况下怎么样
+
+括号有效配对是指：
+
+- 任何一个左括号都能找到和其正确配对的右括号
+- 任何一个右括号都能找到和其正确配对的左括号
+
+返回一个括号字符串中，最长的括号有效子串的长度，返回这个字符串最大能够嵌套几层？[solution](sample-corresponding/src/test/java/com/pineapple/BracketEffectiveMatchingTest.java)
+

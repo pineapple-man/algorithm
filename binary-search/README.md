@@ -8,3 +8,6 @@
 4. 在一个无序数组中，任意两个相邻的数不想等局部最小值问题
 5. [寻找右区间](https://leetcode.cn/problems/find-right-interval/)
 6. [875. 爱吃香蕉的珂珂](https://leetcode.cn/problems/koko-eating-bananas/)
+7.
+在行、列有序的二维数组中，找num，找到返回true，否则返回false。[solution-java](src/test/java/P7Test.java)
+,[solution-golang](src/main/p7.go)

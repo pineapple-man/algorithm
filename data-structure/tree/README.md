@@ -1,16 +1,25 @@
 ## preliminary
 
-二叉树的递归套路
-答案和头有关的时候，答案和头无关的时候
+二叉树的递归套路：
+> 答案和头有关的时候，答案和头无关的时候
 
 ## Binary Tree
+
+1. 路径问题
+   ==> [solution](binary-tree/src/main/java/com/pineapple/MaxPathSumSolutions.java)
+
+> 给定一个二叉树的头节点 head,路径的规定有以下三种不同的规定
+>
+> - 路径必须是头节点出发，到叶节点为止，返回最大路径和
+> - 路径可以从任何节点出发，但必须往下走到任何节点，返回最大路径和
+> - 路径可以从任何节点出发，到任何节点，返回最大路径和
 
 - [863. 二叉树中所有距离为 K 的结点](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/)
   [solution-java]()
 
 - [1022. 从根到叶的二进制数之和](https://leetcode.cn/problems/sum-of-root-to-leaf-binary-numbers/)
 - [513. 找树左下角的值](https://leetcode.cn/problems/find-bottom-left-tree-value/)
-  ——[solution-go](binary-tree/src/main/findBottomLeftValue.go)
+  ==> [solution-go](binary-tree/src/main/findBottomLeftValue.go)
 
 ## Trie(prefix tree)
 
@@ -73,7 +82,3 @@
 
 ## B plus Tree
 
-> 给定一个二叉树的头节点 head,路径的规定有以下三种不同的规定
-> - 路径必须是头节点出发，到叶节点为止，返回最大路径和
-> - 路径可以从任何节点出发，但必须往下走到任何节点，返回最大路径和
-> - 

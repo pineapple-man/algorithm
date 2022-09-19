@@ -36,6 +36,8 @@
         <module>binary-search</module>
         <module>convex-hull</module>
         <module>hash</module>
+        <module>double-pointer</module>
+        <module>divide-conquer</module>
     </modules>
     <packaging>pom</packaging>
     <description>算法总结</description>

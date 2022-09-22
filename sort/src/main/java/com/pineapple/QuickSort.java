@@ -16,9 +16,46 @@
 
 package com.pineapple;
 
+import com.pineapple.util.Utils;
+
 /**
  * @author pineapple-man
  * @date 2022-05-05 12:39
  */
 public class QuickSort {
+	public static void sort(int[] arr) {
+		process(arr, 0, arr.length - 1);
+	}
+	
+	public static void process(int[] arr, int l, int r) {
+		if (l > r) {
+			return;
+		}
+		int pivot = arr[l + (int) (Math.random() * (r - l + 1))];
+		int[] ans = partition(arr, l, r, pivot);
+		process(arr, l, ans[0] - 1);
+		process(arr, ans[1] + 1, r);
+	}
+	
+	public static int[] partition(int[] arr, int left, int right, int pivot) {
+		if (left > right) {
+			return new int[]{-1, -1};
+		}
+		if (left == right) {
+			return new int[]{left, right};
+		}
+		int less = left - 1;
+		int more = right + 1;
+		int index = left;
+		while (index < more) {
+			if (arr[index] == pivot) {
+				index++;
+			} else if (arr[index] < pivot) {
+				Utils.swap(arr, index++, ++less);
+			} else {
+				Utils.swap(arr, index, --more);
+			}
+		}
+		return new int[]{less + 1, more - 1};
+	}
 }

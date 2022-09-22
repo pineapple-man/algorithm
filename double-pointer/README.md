@@ -12,3 +12,12 @@
 >
 >问题二：如果一个括号字符串无效，返回至少填几个字符能让其整体有效
 > [solution](src/test/java/P1Test.java)
+
+2.
+
+> 给定一个有序数组arr，给定一个正数ai
+> - 1）返回累加和为 aim 的，所有不同的二元组
+> - 2）返回累加和为 aim 的，所有不同的三元组
+>
+> [solution-java](src/test/java/P2Test.java)
+

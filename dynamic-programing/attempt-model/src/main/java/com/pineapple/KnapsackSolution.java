@@ -26,7 +26,7 @@ public class KnapsackSolution {
 	
 	
 	/**
-	 * 所有的货，和，都在w和v数组里,为了方便，其中没有负数
+	 * 所有的货的重要以及价值都在w和v数组里,为了方便，其中没有负数
 	 *
 	 * @param w
 	 * 		重量
@@ -34,6 +34,7 @@ public class KnapsackSolution {
 	 * 		价值
 	 * @param bag
 	 * 		背包容量，不能超过这个载重
+	 *
 	 * @return 背包可以携带的最大价值
 	 */
 	public static int maxValue(int[] w, int[] v, int bag) {

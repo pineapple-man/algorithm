@@ -6,3 +6,15 @@
 
 1. [最近的请求次数](https://leetcode.cn/problems/number-of-recent-calls/)
    [solution-go](golang/recent_counter_test.go)
+2. 如下特殊结构
+
+> 有如下结构:
+> ```java
+> class TopRecord{
+> public TopRecord(int k); //构造事先制定好 K 个大小，构造后就固定不变
+> public void add(String str);//向该结构中加入一个字符串，可以重复加入
+> public List<String> top();//返回之前加入堆所有的字符串中，词频最大的 K 个
+> }
+> ```
+> 要求: add() 时间复杂度为 O(log k)，top 方法的复杂度 O(k)
+

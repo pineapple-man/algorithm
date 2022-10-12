@@ -23,7 +23,7 @@
 
 ## Trie(prefix tree)
 
-前缀树相关的算法在[这里](trie/src/test/java/com/pineapple/TrieTest.java)
+前缀树相关的算法在[这里](trie/READNE.md)
 
 ## Binary Search Tree
 

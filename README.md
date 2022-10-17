@@ -6,7 +6,8 @@
 
 # preliminary
 
-文档中出现出现这样的超链接：[solution-java]() 表示对应的题目的Java代码的测试文件链接，可以通过查看对应的测试文件了解对应题目的详细算法求解实现
+文档中出现出现这样的超链接：[solution-java]()
+表示对应的题目的Java代码的测试文件链接，可以通过查看对应的测试文件了解对应题目的详细算法求解实现
 
 # sort
 
@@ -35,3 +36,21 @@
 # travel
 
 遍历相关的算法记录在[这里](travel/README.md)
+
+# LeetCode 高频题目
+
+|题目|题解|
+|:-------:|:-----:|
+|[1. Two Sum](https://leetcode.cn/problems/two-sum/?favorite=2cktkvj)|[solution-java](hash/src/main/java/TwoSum.java)|
+|[2. Add Two Numbers](https://leetcode.cn/problems/add-two-numbers/?favorite=2cktkvj)|[solution-java](data-structure/linked-list/src/main/java/AddTwoNumbers.java)|
+|[3. Longest Substring Without Repeating Characters](https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/?favorite=2cktkvj)|[solution-java](dynamic-programing/attempt-model/src/main/java/com/pineapple/LongestSubstringWithoutRepeatingCharacters.java)|
+|[4. Median of Two Sorted Arrays](https://leetcode.cn/problems/median-of-two-sorted-arrays/?favorite=2cktkvj)|[solution-java]()|
+|[5.Longest Palindromic Substring](https://leetcode.cn/problems/longest-palindromic-substring/)|[solution-java]()|
+|[7.Reverse Integer](https://leetcode.cn/problems/reverse-integer/)|[solution-java](tricks/src/main/java/ReverseInteger.java)|
+|[8. String to Integer (atoi)](https://leetcode.cn/problems/string-to-integer-atoi/)|[solution-java]()|
+|[10. Regular Expression Matching](https://leetcode.cn/problems/regular-expression-matching/)|[solution-java](data-structure/strings/src/main/java/Reg.java)|
+|[11. Container With Most Water](https://leetcode.cn/problems/container-with-most-water/)|[solution-java](double-pointer/src/main/java/ContainerWithMostWater.java)|
+|[12. Integer to Roman](https://leetcode.cn/problems/integer-to-roman/)|[solution-java]()|
+|[13. Roman to Integer](https://leetcode.cn/problems/roman-to-integer/)|[solution-java]()|
+|[14. Longest Common Prefix](https://leetcode.cn/problems/longest-common-prefix/)|[solution-java](data-structure/hash-table/src/main/java/LongestCommonPrefix.java)|
+|[15. 3Sum](https://leetcode.cn/problems/3sum/)||

@@ -16,7 +16,6 @@
 
 package com.pineapple.util;
 
-import jdk.nashorn.internal.runtime.regexp.joni.exception.ValueException;
 
 /**
  * @author pineapple-man
@@ -38,9 +37,6 @@ public class Utils {
 	 * 使用位运算交换两个数，可能存在
 	 */
 	public static void swapBinary(int[] arr, int i, int j) {
-		if (i == j) {
-			throw new ValueException("i,j must not be equal");
-		}
 		arr[i] = arr[i] ^ arr[j];
 		arr[j] = arr[i] ^ arr[j];
 		arr[i] = arr[i] ^ arr[j];

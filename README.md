@@ -53,4 +53,10 @@
 |[12. Integer to Roman](https://leetcode.cn/problems/integer-to-roman/)|[solution-java]()|
 |[13. Roman to Integer](https://leetcode.cn/problems/roman-to-integer/)|[solution-java]()|
 |[14. Longest Common Prefix](https://leetcode.cn/problems/longest-common-prefix/)|[solution-java](data-structure/hash-table/src/main/java/LongestCommonPrefix.java)|
-|[15. 3Sum](https://leetcode.cn/problems/3sum/)||
+|[15. 3Sum](https://leetcode.cn/problems/3sum/)|[solution-java](double-pointer/src/main/java/ThreeSum.java)|
+|[17. Letter Combinations of a Phone Number](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/)|[solution-java](dynamic-programing/attempt-model/src/main/java/com/pineapple/LetterCombinationsOfAPhoneNumber.java)|
+|[19. Remove Nth Node From End of List](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)|[solution-java](data-structure/linked-list/src/main/java/RemoveNthNodeFromEndOfList.java)|
+|[20. Valid Parentheses](https://leetcode.cn/problems/valid-parentheses/)|[solution-java](data-structure/stack/src/main/java/ValidParentheses.java)|
+|[21. Merge Two Sorted Lists](https://leetcode.cn/problems/merge-two-sorted-lists/)|[solution-java]()|
+|[22. Generate Parentheses](https://leetcode.cn/problems/generate-parentheses/)|[solution-java](dynamic-programing/attempt-model/src/main/java/com/pineapple/GenerateParentheses.java)|
+|[23. Merge k Sorted Lists](https://leetcode.cn/problems/merg-k-sorted-lists/)|[solution-java](data-structure/linked-list/src/main/java/MergeKSortedLists.java)|

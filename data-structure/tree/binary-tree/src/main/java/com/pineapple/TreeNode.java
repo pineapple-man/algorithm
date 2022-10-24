@@ -13,13 +13,13 @@ import lombok.ToString;
 @EqualsAndHashCode
 @Data
 @NoArgsConstructor
-public class BinaryTree {
-	public BinaryTree left;
-	public BinaryTree right;
-	public int value;
+public class TreeNode {
+	public TreeNode left;
+	public TreeNode right;
+	public int val;
 	
-	public BinaryTree(int value) {
-		this.value = value;
+	public TreeNode(int val) {
+		this.val = val;
 	}
 	
 }

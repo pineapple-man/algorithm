@@ -43,11 +43,10 @@
 | `update(l,r,v)` | 区间`[l,r]`上统一更新为`v` | `O(logn)` |
 |  `query(l,r)`   |    区间`[l,r]`上求和    | `O(logn)` |
 
-1. 落方块问题
+> [落方块问题](https://leetcode.cn/problems/falling-squares/)
 
-> [力扣链接](https://leetcode.cn/problems/falling-squares/)
-
-2. 1～N 有 N 个房子，56个颜色，可以任意的选择执行 update(L,R,color)操作，即在`[L,R]`上的房子都刷成`color`
+2. 1～N 有 N 个房子，56个颜色，可以任意的选择执行 update(L,R,color)操作，即在`[L,R]`
+   上的房子都刷成`color`
    颜色，以及`query(L,R)`操作，查询`[L,R]`上的颜色种类
 
 > > 假设我们有一个数组：

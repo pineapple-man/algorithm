@@ -21,7 +21,8 @@
  */
 
 public class P1 {
-	public static int solution(int[]) {
-	
+	public static int solution(int[] arr) {
+// todo implement me
+		return 0;
 	}
 }

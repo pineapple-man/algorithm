@@ -56,10 +56,11 @@ public class StringGenerator {
 	}
 	
 	/**
-	 * 返回最大长度的只有小写字母的字符串
+	 * 返回最大长度且只有小写字母的字符串
 	 *
 	 * @param maxLength
 	 * 		字符串的最大长度
+	 *
 	 * @return 生成的字符串
 	 */
 	public static String getRandomLengthLowerCaseString(int maxLength) {

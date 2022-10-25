@@ -6,7 +6,6 @@
 
 1. [最近的请求次数](https://leetcode.cn/problems/number-of-recent-calls/)
    [solution-go](golang/recent_counter_test.go)
-2. 如下特殊结构
 
 > 有如下结构:
 > ```java
@@ -16,5 +15,6 @@
 > public List<String> top();//返回之前加入堆所有的字符串中，词频最大的 K 个
 > }
 > ```
-> 要求: add() 时间复杂度为 O(log k)，top 方法的复杂度 O(k)
+> 要求: add() 时间复杂度为 O(log k)，top 方法的复杂度 O(k).
+> [solution-java]()
 

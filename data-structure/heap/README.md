@@ -10,9 +10,6 @@
 ## Advanced Heap
 
 ## Problem Set
-
-1. Top K 问题
-
-> 给定一个有字符串组成的数组string[] strs,给定一个正数k,返回词频最大的前k个字符串，
-> 假设结果是唯一的。(大根堆与小根堆堆用法)
-> [solution-java]()
+|                                       题目                                        |        解法         |
+|:-------------------------------------------------------------------------------:|:-----------------:|
+| [692. Top K Frequent Words](https://leetcode.cn/problems/top-k-frequent-words/) | [solution-java](src/main/java/com/pineapple/TopK.java) |
